@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="heading" id="heading">
+        <a href="index.html"><img src="/img/logo1.png" alt="logo" width="30px"></a>
+        <h1 class="title">Paradigm Pet Professionals</h1>
+        <h2 class="slogan">Evidence-based pet care advice for every pet lover</h2>
+    </div>
+    <div class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">Pets
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/pets/dog.html">Dog</a>
+            <a href="/pets/cat.html">Cat</a>
+            <a href="/pets/fish.html">Fish</a>
+            <a href="/pets/bird.html">Bird</a>
+            <a href="/pets/smallpet.html">Small Animals</a>
+          </div>
+        </div>
+    </div>
+    <div class="stickymenu">
+        <a href="#heading">Back Top</a>
+    </div>
+    <br><br><br>
+    <div class="main">
+        <h1>Contact Us</h1>
+        <h2>All Fields Are Required.</h2>
+        
+        <div class="container">
+            <form action="action_page.php">
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First name.." required>
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last name.." required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email.." required>  
+
+            <label for="phonenumber">Phone Number</label>
+            <input type="tel" maxlength="10" id="phonenumber" name="phonenumber" placeholder="Phone number.." required>  
+
+            <label for="pets">Choose Pet Type</label>
+            <select id="pets" name="pets">
+                <option value="value" selected disabled hidden>Select An Option</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="fish">Fish</option>
+                <option value="bird">Bird</option>
+                <option value="smallanimals">Small Animals</option>
+            </select>
+
+            <label for="reason">Reason For Consult</label>
+            <textarea id="reason" name="reason" placeholder="Write here.." style="height:100px" required></textarea>
+
+            <label for="additionalinfo">Additional Information</label>
+            <textarea id="additionalinfo" name="additionalinfo" placeholder="Write here.." style="height:100px" required></textarea>
+        
+            <input type="submit" value="Submit">
+        
+            </form>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <hr>
+    <img src="/img/logo2.png" alt="logo" width="10%">
+    <div class="footer">
+        <footer>
+            &copy; 2024 Paradigm Pet Professionals. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
